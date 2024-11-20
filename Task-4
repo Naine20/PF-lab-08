@@ -1,0 +1,39 @@
+/* Grade Converter
+• Write a program that takes a letter grade (A, B, C, D, or F) and outputs a description of 
+the grade. For example, A means "Excellent," B means "Good," etc.
+• Example input: B
+• Expected output: "Good */
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	char v;
+	
+	cout<<"Enter your Grade(A,B,C,D or F): "<<endl;
+	cin>>v;
+	
+	switch(v)
+	{
+		case 'A' :
+			cout<<"Excellent";
+			break;
+		case 'B':
+			cout<<"Good";
+			break;
+		case 'C':
+			cout<<"Average";
+			break;
+		case 'D':
+			cout<<"Need Improvement";
+			break;
+		case 'F':
+			cout<<"Fail";
+			break;
+			default:
+			cout<<"Invalid Input";
+			return 0;
+			
+	}
+}
