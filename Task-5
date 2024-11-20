@@ -1,0 +1,58 @@
+/* Simple Bank Transaction System
+Write a program that simulates a basic bank system with a switch menu to deposit, withdraw, or 
+check balance.
+Requirements:
+• Display a menu:
+1. Deposit
+2. Withdraw
+3. Check Balance
+4. Exit
+• Ask the user to choose an option and use a switch statement to perform the selected task.
+• Keep track of the balance and ensure the withdrawal doesn’t exceed it. *?
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int opt;
+	
+	cout<<"Menu"<<endl;
+	cout<<"1.Deposit"<<endl;
+	cout<<"2.Withdraw"<<endl;
+	cout<<"3.Check balance"<<endl;
+	cout<<"4.Exit"<<endl;	
+	cout<<"Choose(1-4):"<<endl;
+	cin>>opt;
+	
+	
+	switch(opt)
+	{
+		case 1 :
+			cout<<"10000";
+			break;
+		case 2:
+			cout<<"Current\nSaving";
+			break;
+		case 3:
+			cout<<" Your balance: 1000000000";
+			break;
+		case 4:
+			cout<<"Exit"<<endl;
+			cout<<"............."<<endl;
+			cout<<".           ."<<endl;
+			cout<<".           ."<<endl;			
+			cout<<".           ."<<endl;	
+			cout<<". O-        ."<<endl;	
+			cout<<".           ."<<endl;	
+			cout<<".           ."<<endl;	
+			cout<<".           ."<<endl;	
+			cout<<".           ."<<endl;
+			cout<<"............."<<endl;		
+			break;
+			default:
+			cout<<"Invalid Input";
+			return 0;
+			
+	}
+}
