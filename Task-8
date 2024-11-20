@@ -1,0 +1,49 @@
+/* Number to Words: Write a program that takes a single-digit integer (0 to 9) as input and uses a 
+switch statement to print the corresponding word (e.g., 0 should print "zero"). */
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout<<"Enter number(0-9): ";
+	cin>>n;
+	
+	switch(n)
+	{
+		case 1:
+			cout<<"\nZero";
+			break;
+		case 2:
+			cout<<"\nTwo";
+			break;
+		case 3:
+			cout<<"\nThree";
+			break;
+		case 4:
+			cout<<"\nFour";
+			break;
+		case 5:
+			cout<<"\nFive";
+			break;
+		case 6:
+			cout<<"\nSix";
+			break;
+		case 7:
+			cout<<"\nSeven";
+			break;
+		case 8:
+			cout<<"\nEight";
+			break;
+		case 9:
+			cout<<"\nNine";
+			break;
+			default:
+			cout<<"Invalid Input";
+			return 0;
+			
+	}
+}
+
+
