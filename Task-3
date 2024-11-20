@@ -1,0 +1,45 @@
+/* Vowel or Consonant
+• Write a program that asks the user for a single alphabet character and uses a switch 
+statement to check if it’s a vowel or a consonant. The program should work for both 
+uppercase and lowercase letters.
+• Example input: 'a'
+• Expected output: "a is a vowel */
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	char v;
+	
+	cout<<"Enter alphabet (In Lower case): "<<endl;
+	cin>>v;
+	
+	switch(v)
+	{
+		case 'a' :
+		case 'A' :
+			cout<<v<<" is a vowel";
+			break;
+		case 'e':
+		case 'E' :
+			cout<<v<<" is a vowel";
+			break;
+		case 'i':
+		case 'I' :
+			cout<<v<<" is a vowel";
+			break;
+		case 'o':
+		case 'O' :
+			cout<<v<<" is a vowel";
+			break;
+		case 'u':
+		case 'U' :
+			cout<<v<<" is a vowel";
+			break;
+			default:
+			cout<<"Consonant";
+			return 0;
+			
+	}
+}
