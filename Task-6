@@ -1,0 +1,37 @@
+/*Simple Traffic Light Simulation
+Write a program that simulates a traffic light system. The user enters a color (R, G, Y for red, 
+green, yellow), and the program gives an action.
+Requirements:
+• R: "Stop"
+• G: "Go"
+• Y: "Slow down"
+• Use switch to handle each case and print the appropriate message.*/
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	char c;
+	
+	cout<<"Enter Traffic Colour(r for red,g for Green,y for yellow): "<<endl;
+	cin>>c;
+	
+	switch(c)
+	{
+		case 'r' :
+			cout<<"Stop";
+			break;
+		case 'g':
+			cout<<"GOOO";
+			break;
+		case 'y':
+			cout<<"Slow Down";
+			break;
+			default:
+			cout<<"Invalid input";
+			return 0;
+			
+	}
+}
